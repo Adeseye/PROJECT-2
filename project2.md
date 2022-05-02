@@ -41,3 +41,5 @@ This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is runni
                 or
 
 <code>curl http://127.0.0.1:80</code>
+
+![Ubuntu shell access](./Images/ubuntu%20shell.JPG)
