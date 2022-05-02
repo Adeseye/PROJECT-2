@@ -25,9 +25,12 @@ Login to AWS management console, open EC2 then launch instance if you haven't cr
   ![Ubuntu Server](./Images/ngnix.JPG)
 
 
-This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is running correctly then run the command <code>sudo systemctl status nginx</code>
+This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is running correctly then run the command 
 
- ![alt text](./Images/Nginx.JPG)
+<code>sudo systemctl status nginx</code>
+
+
+![NginX](./Images/Status.JPG)
 
   To allow server to receive traffic by the Web server, I will need to open TCP port 80 which is the default port browsers use to access web page on the internet. 
 
