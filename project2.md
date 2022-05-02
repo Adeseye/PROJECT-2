@@ -20,10 +20,6 @@ Login to AWS management console, open EC2 then launch instance if you haven't cr
 
  First I'm going to update the server package index by running the command 
  
- <code>sudo apt update</code>
-
-Then <code>sudo apt install nginx</code>
-
-To install Nginx Web server
+ <code>sudo apt update</code> then <code>sudo apt install nginx</code> to install Nginx Web server
 
  ![Ubuntu Server](./Images/ngnix.JPG)
