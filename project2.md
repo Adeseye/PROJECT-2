@@ -1,4 +1,4 @@
-### <center>INSTALLING NIGINX WEB SERVER 
+### <center>INSTALLING NIGINX WEB SERVER  
 
 In this project I would be implementing a similar stack like Apache but with NGINX Webserver.
 
