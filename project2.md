@@ -31,7 +31,9 @@ This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is runni
 
   To allow server to receive traffic by the Web server, I will need to open TCP port 80 which is the default port browsers use to access web page on the internet. 
 
-  We currently have TCP port 22 open by default on the EC2 machine to access it via SSH, a new rule will be needed open inbound connection through port 80:
+  We currently have TCP port 22 open by default on the EC2 machine to access it via SSH, a new rule will be needed open inbound connection through port 80: Which was created in previous project(project-1) 
+
+   ![Nginx](./Images/inbound.JPG
 
   First I' going to attempt to access Ubuntu shell locally by running  
 
