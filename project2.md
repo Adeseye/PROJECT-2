@@ -33,7 +33,7 @@ This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is runni
 
   We currently have TCP port 22 open by default on the EC2 machine to access it via SSH, a new rule will be needed open inbound connection through port 80: Which was created in previous project(project-1) 
 
-  ![Ubuntu shell access](./Images/inbound.JPG)
+  ![Inbound firewall](./Images/inbound.JPG)
 
   First I' going to attempt to access Ubuntu shell locally by running  
 
@@ -53,6 +53,6 @@ Next is to test if the Nginx Server can respond to request from the internet, op
 <code>http://http://52.54.111.187/80</code>
 
 
-
+ ![Webpage](./Images/localip.JPG)
 
 
