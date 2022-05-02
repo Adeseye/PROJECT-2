@@ -22,11 +22,9 @@ Login to AWS management console, open EC2 then launch instance if you haven't cr
  
  <code>sudo apt update</code> then <code>sudo apt install nginx</code> to install Nginx Web server, type Y for yes to install the application.
 
- This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is running correctly then run the command <code>sudo systemctl status nginx</code>
+  ![Ubuntu Server](./Images/ngnix.JPG)
+
+
+This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is running correctly then run the command <code>sudo systemctl status nginx</code>
 
   ![Nginx](./Images/status.JPG)
-
-
-
-
- ![Ubuntu Server](./Images/ngnix.JPG)
