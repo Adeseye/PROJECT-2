@@ -30,7 +30,7 @@ This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is runni
 <code>sudo systemctl status nginx</code>
 
 
-![NginX](./Images/Status.JPG)
+![Ubuntu shell access](./Images/system%20status.JPG)
 
   To allow server to receive traffic by the Web server, I will need to open TCP port 80 which is the default port browsers use to access web page on the internet. 
 
@@ -38,24 +38,10 @@ This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is runni
 
   ![Inbound firewall](./Images/inbound.JPG)
 
-  First I' going to attempt to access Ubuntu shell locally by running  
+Next that a firewall has been configured with TCP port 80 open, test Nginx Server can respond to request from the internet.
 
+Open a browser and type in public IP address into the URL 
 
-<code>curl http://localhost:80 </code>
-                
-                or
-
-<code>curl http://127.0.0.1:80</code>
-
-![Ubuntu shell access](./Images/ubuntu%20shell.JPG)
-
-Yes I can.
-
-Next is to test if the Nginx Server can respond to request from the internet, open a browser and type in public IP address into the URL 
-
-<code>http://http://52.54.111.187/80</code>
-
-
- ![Webpage](./Images/localip.JPG)
+ ![Nginx](./Images/nginx%20live.JPG)
 
 
