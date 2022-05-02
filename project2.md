@@ -50,5 +50,7 @@ Next is to test if the Nginx Server can respond to request from the internet, op
 
 <code>http://http://52.54.111.187/80</code>
 
+![Ubuntu shell access](./Images/localip.JPG)
+
 
 
