@@ -43,3 +43,12 @@ This is installed on the Ubuntu 20.04 server(Instance), to verify nginx is runni
 <code>curl http://127.0.0.1:80</code>
 
 ![Ubuntu shell access](./Images/ubuntu%20shell.JPG)
+
+Yes I can.
+
+Next is to test if the Nginx Server can respond to request from the internet, open a browser and type in public IP address into the URL 
+
+<code>http://http://52.54.111.187/80</code>
+
+
+
