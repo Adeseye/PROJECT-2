@@ -46,7 +46,8 @@ Open a browser and type in public IP address into the URL
 
 
 
-*****Installing MSQL
+*****Installing MSQL*************************************************
+
 
 
 ### <center>INSTALLING PHP
