@@ -45,8 +45,48 @@ Open a browser and type in public IP address into the URL
  ![Nginx](./Images/nginx%20live.JPG)
 
 
+## <center>INSTALLING MYSQL</center>
 
-*****Installing MSQL*************************************************
+Now that Apache web server is up and running, now am going to install MySQL server which is a Database Management System (DBMS). This will store and manage data on my website.
+
+On Terminal run the command to install MySQL
+
+<code>sudo apt install MySQL-server</code> and type Yes
+
+![Installing MySQL](./Images/mysql%20install.JPG)
+
+Type Y for yes and hit the enter key install MySQL.
+
+![installed MySQL](./Images/mysql%20installed.JPG)
+
+
+It is recommended you run a security script that comes preinstalled with MySQL, This script will remove some insecure default settings and lock down access to your database system. 
+
+Start the interactive script by running:
+
+<code>sudo mysql_secure_installation</code>
+
+![secure installation](./Images/sudeo%20secure.JPG)
+
+You would be prompted to VALIDATE PASSWORD PLUGIN. - Press Y to create a password. You would be shown password type and strength level, enter a strength level and a password.
+
+![MYSQL password](./Images/MySQL%20secure.JPG)
+
+Next you would be prompted to remove some anonymous users and the test database, disable remote root logins, and load these new rules so that MySQL immediately respects the changes you have made.
+
+![Remove default access to MySQL Database](./Images/sql%20remove.JPG)
+
+To test I can access or login to the MYSQL console, run the command <code>sudo mysql</code>
+
+
+This confirms am able to access MySQL console, to exit the MySQL console. 
+Run exit command   <code>ext</code>
+
+![MySQL login console test](./Images/mysql%20access.JPG)
+
+
+That concludes installing and configuring MySQL.
+
 
 
 
