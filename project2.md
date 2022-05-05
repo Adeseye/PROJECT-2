@@ -201,6 +201,53 @@ This validates NGIX handles .php files off my OHP processor, I'm going to remove
 
 Now use rm to remove that file:
 
-<code>sudo rm /var/www/your_domain/info.php</code>
+<code>sudo rm /var/www/your_domain/info.php</code>  
 
-You can always regenerate this file if you need it later.
+
+This can be retrieved at a later time when needed.
+
+
+ ## RETRIEVING DATA FROM MYSQL DATABASE WITH PHP 
+
+ In this step you will create a test database (DB) with simple "To do list" and configure access to it, so the Nginx website would be able to query data from the DB and display it.
+
+At the time of this writing, the native MySQL PHP library mysqlnd doesn’t support caching_sha2_authentication, the default authentication method for MySQL 8. We’ll need to create a new user with the mysql_native_password authentication method in order to be able to connect to the MySQL database from PHP.
+
+We will create a database named example_database and a user named example_user, but you can replace these names with different values.
+
+First, connect to the MySQL console using the root account:
+
+<code>sudo mysql</code>
+
+To create a new database, run the following command from your MySQL console:
+
+<code>mysql> CREATE DATABASE `adeseye_database`;</code>
+
+Now you can create a new user and grant him full privileges on the database you have just created.
+
+The following command creates a new user named example_user, using mysql_native_password as default authentication method. We’re defining this user’s password as password, but you should replace this value with a secure password of your own choosing.
+
+<code>mysql>  CREATE USER 'adeseye_user'@'%' IDENTIFIED WITH mysql_native_password BY 'Password123!';</code>
+
+Now we need to give this user permission over the example_database database:
+
+<code>mysql> GRANT ALL ON adeseye_database.* TO 'Adeseye_user'@'%';</code>
+
+This will give the adeseye_user user full privileges over the adeseye_database database, while preventing this user from creating or modifying other databases on your server.
+
+Now exit the MySQL shell with:
+
+<code>mysql> exit</code>
+
+You can test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
+
+<code>mysql -u example_user -p</code>
+
+Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. After logging in to the MySQL console, confirm that you have access to the example_database database:
+
+<code>mysql> SHOW DATABASES;</code>
+
+This will give you the following output:
+
+![alt text](./Images/show%20data%20base.JPG)
+
