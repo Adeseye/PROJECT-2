@@ -169,4 +169,38 @@ This means the 'echo' command I wrote to index.html, this confirms Nginx site is
 LEMP stack is now fully configured. In the next step, we’ll create a PHP script to test that Nginx is able to manage .php files within the newly configured website.
 
 
- 
+   ### <center>TESTING PHP WITH NGINX
+
+ I currently have LEMP stack completely setup, to validate Nginx can correctly hand .php files to my setup PHP processor.
+
+This can be done by creating a test PHP file in my document root. Open a new file called info.php within your document root in your text editor:
+
+<code>sudo nano /var/www/projectLEMP/info.php</code>
+
+Type or paste the following lines into the new file. This is valid PHP code that will return information about your server:
+
+![PHP code](./Images/php.php)
+
+*Hold Ctrl + U to paste code into editor, then Ctrl X key to save and exit editor*
+
+
+![Nano Editor](./Images/Nano%20editor.JPG)
+
+
+
+You can now access this page in your web browser by visiting the domain name or public IP address you’ve set up in your Nginx configuration file, followed by /info.php:
+
+<code>http://13.41.79.150/info.php</code>
+
+
+You will see a web page containing detailed information about your server: 
+
+![alt text](./Images/info.php)
+
+This validates NGIX handles .php files off my OHP processor, I'm going to remove the file you I created has it contains sensitive information about my PHP environment and my Ubuntu server. 
+
+Now use rm to remove that file:
+
+<code>sudo rm /var/www/your_domain/info.php</code>
+
+You can always regenerate this file if you need it later.
