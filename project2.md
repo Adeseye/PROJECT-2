@@ -239,9 +239,9 @@ Now exit the MySQL shell with:
 
 <code>mysql> exit</code>
 
-You can test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
+Now I can test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
 
-<code>mysql -u example_user -p</code>
+<code>mysql -u adeseye_user -p</code>
 
 Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. After logging in to the MySQL console, confirm that you have access to the example_database database:
 
@@ -251,3 +251,48 @@ This will give you the following output:
 
 ![alt text](./Images/show%20data%20base.JPG)
 
+Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
+
+![alt text](./Images/create%20table.JPG)
+
+Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
+
+![alt text](./Images/create%20todo%20list.JPG)
+
+Insert a row of content in the test table.
+
+![alt text](./Images/todo%20list2.JPG)
+
+![alt text](./Images/my%20first%20item.JPG)
+
+To confirm that the data was successfully saved to your table, run:
+
+<code>mysql>  SELECT * FROM adeseye_database.todo_list;</code>
+
+![alt text](./Images/output.JPG)
+
+After confirming that you have valid data in your test table, you can exit the MySQL console:
+
+<code>mysql> exit</code>
+
+Now I can create a PHP script that will connect to MySQL and query for your content. Create a new PHP file in your custom web root directory using your preferred editor. We’ll use vi for that:
+
+<code>nano /var/www/projectLEMP/todo_list.php</code>
+
+The following PHP script connects to the MySQL database and queries for the content of the todo_list table, displays the results in a list. If there is a problem with the database connection, it will throw an exception.
+
+Copy this content into your todo_list.php script:
+
+![alt text](./Images/phpcode2.JPG)
+
+
+![alt text](./Images/phpcode3.JPG)
+
+Save and close the file when you are done editing.
+
+You can now access this page in your web browser by visiting the domain name or public IP address configured for your website, followed by /todo_list.php:
+
+<code>http://<Public_domain_or_IP>/todo_list.php</code>
+
+
+You should see a page like this, showing the content you’ve inserted in your test table:
