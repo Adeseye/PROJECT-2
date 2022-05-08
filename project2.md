@@ -221,7 +221,7 @@ Notice the -p flag in this command, which will prompt you for the password used 
 
 This will give you the following output:
 
-![alt text](./Images/show%20data%20base.JPG)
+![alt text](./Images/show%20database.JPG)
 
 Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
 
