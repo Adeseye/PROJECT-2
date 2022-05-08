@@ -60,43 +60,13 @@ Type Y for yes and hit the enter key install MySQL.
 ![installed MySQL](./Images/mysql%20installed.JPG)
 
 
-It is recommended you run a security script that comes preinstalled with MySQL, This script will remove some insecure default settings and lock down access to your database system. 
-
-Start the interactive script by running:
-
-<code>sudo mysql_secure_installation</code>
-
-![secure installation](./Images/sudeo%20secure.JPG)
-
-You would be prompted to VALIDATE PASSWORD PLUGIN. - Press Y to create a password. You would be shown password type and strength level, enter a strength level and a password.
-
-![MYSQL password](./Images/MySQL%20secure.JPG)
-
-Next you would be prompted to remove some anonymous users and the test database, disable remote root logins, and load these new rules so that MySQL immediately respects the changes you have made.
-
-![Remove default access to MySQL Database](./Images/sql%20remove.JPG)
-
-To test I can access or login to the MYSQL console, run the command <code>sudo mysql</code>
-
-
-This confirms am able to access MySQL console, to exit the MySQL console. 
-Run exit command   <code>ext</code>
-
-![MySQL login console test](./Images/mysql%20access.JPG)
-
-
-That concludes installing and configuring MySQL.
-
-
-
-
 ### <center>INSTALLING PHP
 
  I have successfully installed Nginx to server my content and MySQL installed to store and manage data. Now I need to install PHP to process code and generate dynamic content for the webserver.
 
  I will need to install 2 packages at once, run :
 
- <code>udo apt install php-fpm php-mysql</code>
+ <code>sudo apt install php-fpm php-mysql</code>
 
 When prompted, type Y and press ENTER to confirm installation.
 
@@ -221,19 +191,19 @@ First, connect to the MySQL console using the root account:
 
 To create a new database, run the following command from your MySQL console:
 
-<code>mysql> CREATE DATABASE `adeseye_database`;</code>
+<code>mysql> CREATE DATABASE `example_database`;</code>
 
 Now you can create a new user and grant him full privileges on the database you have just created.
 
 The following command creates a new user named example_user, using mysql_native_password as default authentication method. We’re defining this user’s password as password, but you should replace this value with a secure password of your own choosing.
 
-<code>mysql>  CREATE USER 'adeseye_user'@'%' IDENTIFIED WITH mysql_native_password BY 'Password123!';</code>
+<code>mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';</code>
 
 Now we need to give this user permission over the example_database database:
 
-<code>mysql> GRANT ALL ON adeseye_database.* TO 'Adeseye_user'@'%';</code>
+<code>mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';</code>
 
-This will give the adeseye_user user full privileges over the adeseye_database database, while preventing this user from creating or modifying other databases on your server.
+This will give the example_user user full privileges over the example_database database, while preventing this user from creating or modifying other databases on your server.
 
 Now exit the MySQL shell with:
 
