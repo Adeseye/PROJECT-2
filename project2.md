@@ -209,9 +209,11 @@ Now exit the MySQL shell with:
 
 <code>mysql> exit</code>
 
+![alt text](./Images/1.JPG)
+
 Now I can test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
 
-<code>mysql -u adeseye_user -p</code>
+<code>mysql -u example_user -p</code>
 
 Notice the -p flag in this command, which will prompt you for the password used when creating the example_user user. After logging in to the MySQL console, confirm that you have access to the example_database database:
 
