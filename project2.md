@@ -1,4 +1,4 @@
-### <center>INSTALLING NIGINX WEB SERVER  
+### INSTALLING NIGINX WEB SERVER  
 
 In this project I would be implementing a similar stack like Apache but with NGINX Webserver.
 
@@ -7,7 +7,7 @@ In order to begin this project the following is required ;
 <ol>
   <li>AWS account</li>
   <li>EC2 instance of t2.nano running Ubuntu Server 20.04 LTS (HVM) image</li>
-  <li>Git Bash</li> 
+  <li>Git Bash but I will be using Terminal</li> 
   </ol>
 
 Lets begin:-
@@ -225,31 +225,25 @@ This will give you the following output:
 
 Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
 
-![alt text](./Images/create%20table.JPG)
+![alt text](./Images/todo%20list.JPG)
 
-Next, we’ll create a test table named todo_list. From the MySQL console, run the following statement:
-
-![alt text](./Images/create%20todo%20list.JPG)
-
-Insert a row of content in the test table.
+Insert a row of content into the test table. 
 
 ![alt text](./Images/todo%20list2.JPG)
 
-![alt text](./Images/my%20first%20item.JPG)
-
 To confirm that the data was successfully saved to your table, run:
 
-<code>mysql>  SELECT * FROM adeseye_database.todo_list;</code>
+<code>mysql>  SELECT * FROM example_database.todo_list;</code>
 
-![alt text](./Images/output.JPG)
+![alt text](./Images/example%20database.JPG)
 
 After confirming that you have valid data in your test table, you can exit the MySQL console:
 
 <code>mysql> exit</code>
 
-Now I can create a PHP script that will connect to MySQL and query for your content. Create a new PHP file in your custom web root directory using your preferred editor. We’ll use vi for that:
+![alt text](./Images/exit.JPG)
 
-<code>nano /var/www/projectLEMP/todo_list.php</code>
+Now I can create a PHP script that will connect to MySQL and query for your content. Create a new PHP file in your custom web root directory using your preferred editor. We’ll use vi for that:
 
 The following PHP script connects to the MySQL database and queries for the content of the todo_list table, displays the results in a list. If there is a problem with the database connection, it will throw an exception.
 
@@ -257,14 +251,17 @@ Copy this content into your todo_list.php script:
 
 ![alt text](./Images/phpcode2.JPG)
 
+<code>vi /var/www/projectLEMP/todo_list.php</code>
 
-![alt text](./Images/phpcode3.JPG)
+![alt text](./Images/todo%20php.JPG)
+
 
 Save and close the file when you are done editing.
 
 You can now access this page in your web browser by visiting the domain name or public IP address configured for your website, followed by /todo_list.php:
 
-<code>http://<Public_domain_or_IP>/todo_list.php</code>
+<code>http://18.170.219.197/todo_list.php</code>
 
+![alt text](./Images/todo%20results.JPG)
 
-You should see a page like this, showing the content you’ve inserted in your test table:
+I have successfully installed and configured Nginz as a web server, PHP for website and MySQL as database management system.  
