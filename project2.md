@@ -59,6 +59,19 @@ Type Y for yes and hit the enter key install MySQL.
 
 ![installed MySQL](./Images/mysql%20installed.JPG)
 
+Once Mysql has been installed its recommended you run this command in a production live environment.
+
+<code>sudo mysql_secure_installation</code>
+
+You would be prompted to validate a password plugin, enabling a password for Mysql and this also removes default configurations that comes pre-installed such as:
+
+Removes anonymous users
+
+Disables root login remotely
+
+Removes data base named 'test' intended for testing which shouldn't be allowed in production environment and more...
+
+For this project we will be using the default configuration as its a test project environment 
 
 ### <center>INSTALLING PHP
 
@@ -264,4 +277,4 @@ You can now access this page in your web browser by visiting the domain name or 
 
 ![alt text](./Images/todo%20results.JPG)
 
-I have successfully installed and configured Nginz as a web server, PHP for website and MySQL as database management system.  
+I have successfully installed and configured Nginx as a web server, PHP for website and MySQL as database management system.  
