@@ -1,4 +1,6 @@
-### INSTALLING NIGINX WEB SERVER  
+ ### DOCUMENTATION OF PROJECT-2
+
+### <center>INSTALLING NIGINX WEB SERVER </center> 
 
 In this project I would be implementing a similar stack like Apache but with NGINX Webserver.
 
