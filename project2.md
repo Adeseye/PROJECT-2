@@ -280,3 +280,5 @@ You can now access this page in your web browser by visiting the domain name or 
 ![alt text](./Images/todo%20results.JPG)
 
 I have successfully installed and configured Nginx as a web server, PHP for website and MySQL as database management system.  
+
+END...
